@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Baby Name Generator</title>
+	<link rel="stylesheet" type="text/css" href="babyName.css">
+</head>
+<body>
+<div id='main'>
+	<h1>Baby Name Generator</h1>
+	<form onsubmit="return false">
+		<label>What is you last name?
+			<input id="lastName" type="text" name="lastname">
+		</label>
+		<br>
+		<label>Boy Name:
+			<input id="boy" onclick="clearName('#89cff0')" type="radio" name="gender">
+		</label>
+		<label>Girl Name:
+			<input id="girl" onclick="clearName('#FFB6C1')" type="radio" name="gender">
+		</label>
+	</form>
+	<br>
+	<button onclick="displayName()">Generate Name</button>
+	<h2 id="babyName"></h2>
+</div>
+<script type="text/javascript" src="babyNameGenerator.js"></script>
+</body>
+</html>
